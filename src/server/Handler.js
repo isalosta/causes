@@ -15,7 +15,6 @@ var storePostal = [""];
 var storeBirthday = [""];
 
 function SetUser(u){
-    console.log(u);
     for(var i = 0; i < u.length; i++){
         storedID.push(u[i].id);
         log.PROC_LOGS('STORE ID: '+u[i].id);
