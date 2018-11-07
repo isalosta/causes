@@ -18,6 +18,7 @@ export default class App extends Component {
   componentDidMount() {
     axios('/web/works/userdata')
       .then(user => {
+        console.log(user.data);
         this.setState({ username: user.data.username }); 
       })
         .catch(err => {console.log(err)});
@@ -30,7 +31,7 @@ export default class App extends Component {
     return (
       <div>
         <Suspense fallback= {<div>...IMPORTING...</div>}>
-              {user ? <Header user_data={this.state.username}/> : <p>Loading.. please wait!</p>}
+              {user ? <Header user_data={this.state.username}/> : null}
         <Switch>
             <Route exact={true} path="/" component={Home} />
             <Route path="/race" component={Race}/>
