@@ -1,6 +1,6 @@
 'use strict'
 
-const model = require('./model/dataModel.js');
+const model = require('./model/DataModel.js');
 const log = require('./../util/logger.js');
 const DB = require('./DBmanager.js');
 
