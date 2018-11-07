@@ -17,18 +17,17 @@ passport.use(new passportLocal (
     (email, password, done) => {
         log.PROC_LOGS("PASSPORT RES | BEGIN LOGIN");
         handler.GET_USERBYEMAIL(email).then((dt) => {
-            
             const user = dt;
             if(user.ID == null || user.email == null || user.password == null){
                 log.PROC_LOGS("PASSPORT RES | FAIL USER");
                 log.U_LOGS("LOGIN FAILED");
-                return done(null, false, {message: "INVALID"});
+                return done(null, false, {message: "WRONG USERNAME"});
             }
 
-            if(password != Hash.Hash(user.password)) {
+            if(Hash.Hash(password) != user.password) {
                 log.PROC_LOGS("PASSPORT RES | FAIL PWD");
                 log.U_LOGS("LOGIN FAILED");
-                return done(null, false, {message: "WRONG PASSWORD"})
+                return done(null, false, {message: "WRONG PASSWORD"});
             }
 
             log.PROC_LOGS("PASSPORT RES | COMPLETED | "+JSON.stringify(dt));
@@ -100,23 +99,21 @@ app.post('/api/login', (req, res, next) => {
 
         req.login(user, (err) => {
             if(err) {log.PROC_LOGS("LOGIN POST | LOGIN FAILED"); return next(err); }
-
             log.PROC_LOGS("LOGIN POST | LOGIN SUCCESS");
             return res.redirect('/authOk');
         });
     }) (req, res, next);
 });
 
-app.get('/api/')
-
 app.get('/authOk', (req, res) => { 
     if(req.isAuthenticated()){
         //res.send({message: "YOU'RE IN"});
+        console.log(req.user);
         log.U_LOGS("AUTH SUCCESS");
-        res.redirect('/');
+        res.send({isAuth: true});
     } else {
         log.U_LOGS("AUTH FAILED");
-        res.redirect('/');
+        res.send({isAuth: false});
     }
 });
 

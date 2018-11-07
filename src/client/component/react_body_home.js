@@ -1,14 +1,8 @@
 'use strict'
 import React from 'react';
 
-var name = "";
-function SetName(nm){
-    name = nm;
-}
-
 class Home extends React.Component{
     render() {
-        const user = name;
         return (
         <div>
             <div id="carousels" class="carousel slide" data-ride="carousel">
@@ -51,4 +45,4 @@ class Home extends React.Component{
     }
 }
 
-export { Home, SetName}
+export default Home;

@@ -1,9 +1,9 @@
 'use strict'
 
-var crypt = require('crypto');
+var crypt = require('md5');
 
 function Hash(string) {
-    return crypt.createHash('md5').update(string).digest('hex');
+    return crypt(string);
 }
 
 module.exports = {

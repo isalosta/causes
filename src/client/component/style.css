@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css?family=Teko');
+.App {
+  background: #ffffff;
+  font-family: 'Teko', serif;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Loader {
+  color: red;
+  font-size: 10vw;
+  letter-spacing: 0.01;
+  transition: transform 0.125s ease;
+}
+.Loader sup {
+  font-size: 50%;
+  vertical-align: baseline;
+}
+.Loader[data-size="1"] {
+  transform: scale(0.52);
+  opacity: 0.01;
+}
+.Loader[data-size="2"] {
+  transform: scale(0.54);
+  opacity: 0.02;
+}
+.Loader[data-size="3"] {
+  transform: scale(0.56);
+  opacity: 0.03;
+}
+.Loader[data-size="4"] {
+  transform: scale(0.58);
+  opacity: 0.04;
+}
+.Loader[data-size="5"] {
+  transform: scale(0.6);
+  opacity: 0.05;
+}
+.Loader[data-size="6"] {
+  transform: scale(0.62);
+  opacity: 0.06;
+}
+.Loader[data-size="7"] {
+  transform: scale(0.64);
+  opacity: 0.07;
+}
+.Loader[data-size="8"] {
+  transform: scale(0.66);
+  opacity: 0.08;
+}
+.Loader[data-size="9"] {
+  transform: scale(0.68);
+  opacity: 0.09;
+}
+.Loader[data-size="10"] {
+  transform: scale(0.7);
+  opacity: 0.1;
+}
+.Loader[data-size="11"] {
+  transform: scale(0.72);
+  opacity: 0.11;
+}
+.Loader[data-size="12"] {
+  transform: scale(0.74);
+  opacity: 0.12;
+}
+.Loader[data-size="13"] {
+  transform: scale(0.76);
+  opacity: 0.13;
+}
+.Loader[data-size="14"] {
+  transform: scale(0.78);
+  opacity: 0.14;
+}
+.Loader[data-size="15"] {
+  transform: scale(0.8);
+  opacity: 0.15;
+}
+.Loader[data-size="16"] {
+  transform: scale(0.82);
+  opacity: 0.16;
+}
+.Loader[data-size="17"] {
+  transform: scale(0.84);
+  opacity: 0.17;
+}
+.Loader[data-size="18"] {
+  transform: scale(0.86);
+  opacity: 0.18;
+}
+.Loader[data-size="19"] {
+  transform: scale(0.88);
+  opacity: 0.19;
+}
+.Loader[data-size="20"] {
+  transform: scale(0.9);
+  opacity: 0.2;
+}
+.Loader[data-size="21"] {
+  transform: scale(0.92);
+  opacity: 0.21;
+}
+.Loader[data-size="22"] {
+  transform: scale(0.94);
+  opacity: 0.22;
+}
+.Loader[data-size="23"] {
+  transform: scale(0.96);
+  opacity: 0.23;
+}
+.Loader[data-size="24"] {
+  transform: scale(0.98);
+  opacity: 0.24;
+}
+.Loader[data-size="25"] {
+  transform: scale(1);
+  opacity: 0.25;
+}
+.Loader[data-size="26"] {
+  transform: scale(1.02);
+  opacity: 0.26;
+}
+.Loader[data-size="27"] {
+  transform: scale(1.04);
+  opacity: 0.27;
+}
+.Loader[data-size="28"] {
+  transform: scale(1.06);
+  opacity: 0.28;
+}
+.Loader[data-size="29"] {
+  transform: scale(1.08);
+  opacity: 0.29;
+}
+.Loader[data-size="30"] {
+  transform: scale(1.1);
+  opacity: 0.3;
+}
+.Loader[data-size="31"] {
+  transform: scale(1.12);
+  opacity: 0.31;
+}
+.Loader[data-size="32"] {
+  transform: scale(1.14);
+  opacity: 0.32;
+}
+.Loader[data-size="33"] {
+  transform: scale(1.16);
+  opacity: 0.33;
+}
+.Loader[data-size="34"] {
+  transform: scale(1.18);
+  opacity: 0.34;
+}
+.Loader[data-size="35"] {
+  transform: scale(1.2);
+  opacity: 0.35;
+}
+.Loader[data-size="36"] {
+  transform: scale(1.22);
+  opacity: 0.36;
+}
+.Loader[data-size="37"] {
+  transform: scale(1.24);
+  opacity: 0.37;
+}
+.Loader[data-size="38"] {
+  transform: scale(1.26);
+  opacity: 0.38;
+}
+.Loader[data-size="39"] {
+  transform: scale(1.28);
+  opacity: 0.39;
+}
+.Loader[data-size="40"] {
+  transform: scale(1.3);
+  opacity: 0.4;
+}
+.Loader[data-size="41"] {
+  transform: scale(1.32);
+  opacity: 0.41;
+}
+.Loader[data-size="42"] {
+  transform: scale(1.34);
+  opacity: 0.42;
+}
+.Loader[data-size="43"] {
+  transform: scale(1.36);
+  opacity: 0.43;
+}
+.Loader[data-size="44"] {
+  transform: scale(1.38);
+  opacity: 0.44;
+}
+.Loader[data-size="45"] {
+  transform: scale(1.4);
+  opacity: 0.45;
+}
+.Loader[data-size="46"] {
+  transform: scale(1.42);
+  opacity: 0.46;
+}
+.Loader[data-size="47"] {
+  transform: scale(1.44);
+  opacity: 0.47;
+}
+.Loader[data-size="48"] {
+  transform: scale(1.46);
+  opacity: 0.48;
+}
+.Loader[data-size="49"] {
+  transform: scale(1.48);
+  opacity: 0.49;
+}
+.Loader[data-size="50"] {
+  transform: scale(1.5);
+  opacity: 0.5;
+}
+.Loader[data-size="51"] {
+  transform: scale(1.52);
+  opacity: 0.51;
+}
+.Loader[data-size="52"] {
+  transform: scale(1.54);
+  opacity: 0.52;
+}
+.Loader[data-size="53"] {
+  transform: scale(1.56);
+  opacity: 0.53;
+}
+.Loader[data-size="54"] {
+  transform: scale(1.58);
+  opacity: 0.54;
+}
+.Loader[data-size="55"] {
+  transform: scale(1.6);
+  opacity: 0.55;
+}
+.Loader[data-size="56"] {
+  transform: scale(1.62);
+  opacity: 0.56;
+}
+.Loader[data-size="57"] {
+  transform: scale(1.64);
+  opacity: 0.57;
+}
+.Loader[data-size="58"] {
+  transform: scale(1.66);
+  opacity: 0.58;
+}
+.Loader[data-size="59"] {
+  transform: scale(1.68);
+  opacity: 0.59;
+}
+.Loader[data-size="60"] {
+  transform: scale(1.7);
+  opacity: 0.6;
+}
+.Loader[data-size="61"] {
+  transform: scale(1.72);
+  opacity: 0.61;
+}
+.Loader[data-size="62"] {
+  transform: scale(1.74);
+  opacity: 0.62;
+}
+.Loader[data-size="63"] {
+  transform: scale(1.76);
+  opacity: 0.63;
+}
+.Loader[data-size="64"] {
+  transform: scale(1.78);
+  opacity: 0.64;
+}
+.Loader[data-size="65"] {
+  transform: scale(1.8);
+  opacity: 0.65;
+}
+.Loader[data-size="66"] {
+  transform: scale(1.82);
+  opacity: 0.66;
+}
+.Loader[data-size="67"] {
+  transform: scale(1.84);
+  opacity: 0.67;
+}
+.Loader[data-size="68"] {
+  transform: scale(1.86);
+  opacity: 0.68;
+}
+.Loader[data-size="69"] {
+  transform: scale(1.88);
+  opacity: 0.69;
+}
+.Loader[data-size="70"] {
+  transform: scale(1.9);
+  opacity: 0.7;
+}
+.Loader[data-size="71"] {
+  transform: scale(1.92);
+  opacity: 0.71;
+}
+.Loader[data-size="72"] {
+  transform: scale(1.94);
+  opacity: 0.72;
+}
+.Loader[data-size="73"] {
+  transform: scale(1.96);
+  opacity: 0.73;
+}
+.Loader[data-size="74"] {
+  transform: scale(1.98);
+  opacity: 0.74;
+}
+.Loader[data-size="75"] {
+  transform: scale(2);
+  opacity: 0.75;
+}
+.Loader[data-size="76"] {
+  transform: scale(2.02);
+  opacity: 0.76;
+}
+.Loader[data-size="77"] {
+  transform: scale(2.04);
+  opacity: 0.77;
+}
+.Loader[data-size="78"] {
+  transform: scale(2.06);
+  opacity: 0.78;
+}
+.Loader[data-size="79"] {
+  transform: scale(2.08);
+  opacity: 0.79;
+}
+.Loader[data-size="80"] {
+  transform: scale(2.1);
+  opacity: 0.8;
+}
+.Loader[data-size="81"] {
+  transform: scale(2.12);
+  opacity: 0.81;
+}
+.Loader[data-size="82"] {
+  transform: scale(2.14);
+  opacity: 0.82;
+}
+.Loader[data-size="83"] {
+  transform: scale(2.16);
+  opacity: 0.83;
+}
+.Loader[data-size="84"] {
+  transform: scale(2.18);
+  opacity: 0.84;
+}
+.Loader[data-size="85"] {
+  transform: scale(2.2);
+  opacity: 0.85;
+}
+.Loader[data-size="86"] {
+  transform: scale(2.22);
+  opacity: 0.86;
+}
+.Loader[data-size="87"] {
+  transform: scale(2.24);
+  opacity: 0.87;
+}
+.Loader[data-size="88"] {
+  transform: scale(2.26);
+  opacity: 0.88;
+}
+.Loader[data-size="89"] {
+  transform: scale(2.28);
+  opacity: 0.89;
+}
+.Loader[data-size="90"] {
+  transform: scale(2.3);
+  opacity: 0.9;
+}
+.Loader[data-size="91"] {
+  transform: scale(2.32);
+  opacity: 0.91;
+}
+.Loader[data-size="92"] {
+  transform: scale(2.34);
+  opacity: 0.92;
+}
+.Loader[data-size="93"] {
+  transform: scale(2.36);
+  opacity: 0.93;
+}
+.Loader[data-size="94"] {
+  transform: scale(2.38);
+  opacity: 0.94;
+}
+.Loader[data-size="95"] {
+  transform: scale(2.4);
+  opacity: 0.95;
+}
+.Loader[data-size="96"] {
+  transform: scale(2.42);
+  opacity: 0.96;
+}
+.Loader[data-size="97"] {
+  transform: scale(2.44);
+  opacity: 0.97;
+}
+.Loader[data-size="98"] {
+  transform: scale(2.46);
+  opacity: 0.98;
+}
+.Loader[data-size="99"] {
+  transform: scale(2.48);
+  opacity: 0.99;
+}
+.Loader[data-size="100"] {
+  transform: scale(2.5);
+  opacity: 1;
+}

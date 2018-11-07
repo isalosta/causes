@@ -20,7 +20,8 @@ class Login extends React.Component{
         this.state = {
             email: '',
             password: '',
-            isLogged: false
+            isLogged: false,
+            errorMessage: ''
         }
 
         this.OnEmailChange = this.OnEmailChange.bind(this);
@@ -50,14 +51,25 @@ class Login extends React.Component{
 
     OnFormSubmit(e){
         e.preventDefault();
-        console.log(e);
+        if(this.state.email == ''){
+            return;
+        }
+
 
         var data = {
             email: this.state.email,
             password: this.state.password
         }
+
         console.log(JSON.stringify(data));
-        axios.post('/api/login', data).then(() => {this.setState({isLogged: true})}).catch(err => console.log(err));
+        axios.post('/api/login', data).then((res) => { 
+            console.log(res.data);
+            if(res.data.message == '' || res.data.message == undefined) {
+                this.setState({isLogged: res.data.isAuth});
+            } else {
+                this.setState({errorMessage: res.data.message});
+            }
+        }).catch(err => console.log(err));
 
     }
 
@@ -82,6 +94,7 @@ class Login extends React.Component{
                         <button className="btn btn-primary btn-block" type="submit">Log In</button>
                     </div>
                     <a href="#" className="forgot">Forgot your email or password?</a>
+                    <p className="forgot">{this.state.errorMessage}</p>
                 </form>
             </div>
             );
